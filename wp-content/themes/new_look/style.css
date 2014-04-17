@@ -1,0 +1,735 @@
+/* Maid In Texas Custom Wordpress Theme
+-----------------------------------------------------------------------------
+
+Theme Name:      Maid In Texas
+Theme URI:       http://www.webtegrity.com
+Description:     Maid In Texas is a custom theme built for Maid In Texas.
+Author:          Webtegrity
+Author URI:      http://www.webtegrity.com
+
+*/
+/* Webtegriy Style Sheet
+-----------------------------------------------------------------------------
+
+Developer:           Webtegrity
+Email Address: 	     info@webtegrity.com
+Developer Website:   http://www.webtegrity.com/
+
+Client Website:      http://www.webtegriy.com/
+Last Modifier: 	     Wayne Alan McWilliams -Wambition
+Last Modified:       02.11.2013
+
+*/
+/* Table of Contents
+-----------------------------------------------------------------------------
+
+ 1. CORE STYLE
+ 2. TYPOGRAPHY
+ 3. IMAGES
+ 4. LINKS
+ 5. FRAMEWORK
+ 6. FOOTER
+ 7. SOCIAL MEDIA
+
+*/
+
+/***************************************/
+/* 1. CORE STYLE */
+/***************************************/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+blockquote, q {quotes: none;}
+br {height: 0;}
+ul, ol, dl {list-style: none;}
+
+/* Class for clearing floats */
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+
+/* 2. Typography 
+------------------------------------------------------------------------------*/
+
+/* Create the Default Headers  */
+h1, h2, h3, h4, h5, h6 {color: #B41A2B; font-family: "Arvo",serif; font-weight: 400;}
+
+/* Create the Default Paragraphs */
+p {color:#000000; line-height:20px;}
+
+/* Specific Header Settings */
+h1 {font-size: 22px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+/* Other Typo */
+strong{font-weight: bold;}
+hr {border:0 #B41A2B solid; border-top-width: 1px; clear: both; height: 0; margin-bottom: 20px;} 
+ol {list-style: decimal;}
+ul {list-style: square;}
+.align-right {float: right; margin-left: 40px; margin-top: 10px;}
+
+/* 3. Images
+------------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+img {border: 0; border-style: none;}
+.sticky,
+.bypostauthor,
+.gallery-caption {
+    display: normal;
+}
+.alignnone {
+    margin: 1em 1em 1em 0;
+}
+.aligncenter,
+div.aligncenter {
+    display:block;
+    margin: .5em auto;
+}
+.alignright {
+    float:right;
+    margin: 0 0 1em 1em;
+}
+.alignleft {
+    float:left;
+    margin: 0 1em 1em 0;
+}
+.aligncenter {
+    display: block;
+    margin: 1em auto;
+}
+img,
+img[class*="align"],
+img[class*="wp-image-"] {
+    max-width: 100%;
+    height: auto;
+}
+img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+img.alignright {
+    margin-left: 1em 0 1em 1em;
+}
+img.alignleft {
+    margin: 1em 1em 1em 0;
+}
+img.aligncenter{
+    display: block;
+    margin: 1em auto;
+}
+img#wpstats {
+    display: block;
+    margin: 0 auto;
+}
+img[class*="align"],
+img[class*="wp-image-"],
+.gallery .gallery-icon img {
+    border: none;
+}
+.wp-caption {
+    margin-bottom: 1em;
+    margin-left: 0;
+    max-width: 96%;
+    text-align: center;
+}
+.wp-caption img {
+    display: block;
+    margin: 0 auto;
+}
+.wp-caption-text {
+    position: relative;
+    font-size: .8em;
+}
+.gallery {
+    margin: 0 auto;
+}
+.gallery .gallery-item  {
+    margin: 0;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.gallery a img {
+    border: none;
+}
+.gallery-columns-4 .gallery-item {
+    width: 25%;
+}
+.gallery-columns-4 .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+/* 4. Links
+------------------------------------------------------------------------------*/
+
+/* Default Link Types */
+a {color:#B41A2B; text-decoration: none;}
+a:hover {color:#751114; text-decoration: none;}
+a:active {outline: none;}
+a:focus {outline: none;}
+
+/* 5. Framework
+------------------------------------------------------------------------------*/
+
+/*** Red Bar ***/
+.fullbar {
+    background-color: #B41A2B;
+    width: 100%;
+    min-height:30px;
+    color: #ffffff;
+    font-family: arial, serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+/*** Wrapper ***/
+#main_wrapper {
+    width: 100%;
+    min-height: 700px;
+    background: url(images/bgimage.jpg) no-repeat scroll 50% -42px transparent;
+}
+/*** Navigation ***/    
+#navbar {
+    background: url(images/bar-hr-line.png) no-repeat scroll center bottom transparent;
+    height: 50px;
+    padding: 13px 0 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, serif;
+}
+#navbar span.align-right {
+    margin-left: 30px;
+    margin-right: 8px;
+    margin-top: 22px;
+}
+#navbar a{
+    display: inline-block;
+    float:left;
+}
+#navbar ul.menu {
+    padding-top:25px;
+    float: right;
+    list-style: block;
+}
+.menu li{
+    padding:0 30px;
+    list-style:none;
+    float: left;
+}
+/*** Content ***/
+
+#nav_content {
+    margin: auto;
+    width: 960px;
+}
+.hm-main-content-wrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+.main-content-wrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.custom-widget-area {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.sidebar {
+    width: 330px;
+    height: auto;
+    float: left;
+}
+.page-content {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* 6. Footer
+------------------------------------------------------------------------------*/        
+#footer {
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    color: #333333;
+    font-family: arial, serif;
+    font-size: 12px;
+}
+#footer a:hover {
+    color: #B41A2B;
+}
+ul.footer_navigation {
+    list-style-type: none;
+}
+ul.footer_navigation a {
+    color: #003082;
+    float: left;
+    display: block;
+    border-right: 1px solid #8FA9BA;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 15px;
+    text-decoration: none;
+}
+ul.footer_navigation .footerlast a {
+    border-right: medium none;
+}
+/* 7. Social Media
+------------------------------------------------------------------------------*/        
+#footer span{
+    float: right;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+
+/* 8. Slider
+------------------------------------------------------------------------------*/
+
+	form{
+  		margin: auto;
+  		width:520px;
+  		text-align: center;
+  	}
+  	
+  	#herotext h1 {
+margin: 0px;
+font-weight: 100;
+color: #B41A2B;
+font-size: 32px;
+padding-bottom: 8px;
+}
+  	
+#slider{
+	width:90%;
+	margin: auto;
+}
+  	
+.radio-toolbar input[type="radio"] {
+    display:none; 
+}
+
+.radio-toolbar label {
+  background-color: white;
+	border:1px solid black;
+    display:inline-block;
+    padding:11px;
+    font-family:Arial;
+    font-size:18px;
+}
+
+label {
+	color:#003082;
+	margin-left: -5px;
+}
+
+ .radio-toolbar label:nth-child(2) {
+	-moz-border-radius-topleft: 		30px;
+	-moz-border-radius-bottomleft: 		30px;
+	-webkit-border-top-left-radius: 	30px;
+	-webkit-border-bottom-left-radius: 	30px;
+	border-radius: 30px 0 0 30px; /* future proofing */
+	-khtml-border-radius: 30px 0 0 30px; /* for old Konqueror browsers */
+}
+
+ .radio-toolbar label:last-child {
+	-moz-border-radius-topright: 		30px;
+	-moz-border-radius-bottomright: 	30px;
+	-webkit-border-top-right-radius: 	30px;
+	-webkit-border-bottom-right-radius: 30px;
+	border-radius: 0 30px 30px 0; /* future proofing */
+	-khtml-border-radius: 0 30px 30px 0; /* for old Konqueror browsers */
+}
+.radio-toolbar input[type="radio"]:checked + label { 
+    background-color:#003082;
+    color: rgb(250, 250, 250);
+    
+}
+#submit {
+  float: left;
+  font-size: 20px;
+  border: 0;
+  color:#FFF;
+  font-weight: 400;
+  width: 475px;
+  //padding-right: 10px; /*JON:051413 was 30 */
+  //padding-left: 40px; /*JON:051413 was 50 */
+  margin-left: 20px; JON:041213 */
+  text-align: right;
+  height: 70px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  background: url(http://maidintexas.webtegstage.com/wp-content/uploads/2014/03/quoteButton.png) 0 0 no-repeat;
+  cursor: pointer;
+  text-shadow: 1px 1px #555;
+  padding: 0;
+}
+
+#submit:hover {
+	background: url(http://maidintexas.webtegstage.com/wp-content/uploads/2014/03/button5.png) 0 0 no-repeat;
+	
+}
+
+
+#submit span {
+  display: block;
+  float: left;
+  padding-top: 16px;
+  width: 305px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#submit #quoteAmount {
+  width: 90px; /*JON:051413 was 115, was 105 */
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 0px;
+  text-align: right;
+}
+#submit #quoteText {
+  padding-top:0px;
+  display: block;
+  visiblility: hidden;
+  width: 75px;
+  text-align: left;
+}
+
+#submit #costAmount {
+  width: 85px; /*JON:051413 was 115, was 105 */
+  font-weight: 100;
+  font-size: 10px;
+  padding-top: 0px;
+  text-align: right;
+  padding-top:0px;
+}
+#submit #costText {
+  display: block;
+  visiblility: hidden;
+  width: 75px;
+  text-align: left;
+  font-size:10px;
+  padding-top:0px;
+}
+
+#leftButton {
+	width:300px;
+	height:67px;
+	float:left;
+	
+}
+#rightButton {
+	width:167px;
+	height:67px;
+	float:left;
+	padding-top:7px;
+}
+
+.amount {
+color: #B41A2B;
+font-weight: bold;
+font-size: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.ui-tooltip, .arrow:after {
+    background: black;
+  }
+  .ui-tooltip {
+  	background-color:rgb(21, 97, 125);
+    padding: 10px 20px;
+    color: white;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+  	background-color:rgb(23, 98, 125);
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+  
+  .clear{
+  	clear:both;
+  }
+  
+#wrapper{
+	margin: auto;
+	width: 980px;  	
+}
+  
+div.ui-datepicker{
+ 	font-size:30px;
+}
+
+button.submit {
+	margin-top:10px;
+  width:372px;
+  height:78px;
+  background:url(images/SignUpButton.png);
+  background-repeat:repeat-y;
+  border:none;
+  overflow:hidden;
+  font-family:'proxima_nova_rgregular', sans-serif;
+  font-size:24px;
+  color:#fff;
+  font-weight:700;
+  position:relative;
+  left:4px;
+  text-shadow: 1px 1px #888, -1px -1px #666;
+}
+
+button.submit:hover {
+  background-position:0px 78px; 
+  cursor:pointer;
+}
+
+.formWrapper{
+	text-align:center;
+  	width:520px;
+  	float:left;
+  	color: #B41A2B;
+  	font-family: "proxima_nova_rgregular", sans-serif;
+	font-family: "Proxima Nova", Helvetica, sans-serif;
+	font-size: 14px;
+}
+.apptDetails {
+position: relative;
+float: left;
+margin: 0 20px;
+color: #B41A2B;
+text-align: center;
+width:350px
+}
+.alert_day {
+margin-left: 28px;
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
+padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+font-size: 16px;
+font-family: arial;
+font-weight: 600;
+}
+
+.summary-header {
+width:auto;
+font-size: 22px;
+padding: 10px;
+margin-bottom:10px;
+background-color: #f5f5f5;
+border: 1px solid #d7d7d7;
+
+}
+
+div#uniform-new-signup-time-list span {
+height: 34px !important;
+width: 110px !important;
+background-position: -64px -1px;
+border: 4px solid #959595;
+border-radius: 4px;
+}
+
+div.selector {
+ /* background-position: 0 -130px;*/
+  line-height: 36px;
+  height: 42px;
+  padding: 0 0 0 0px;
+  position: relative;
+  overflow: hidden;
+  width:185px
+  }
+div.selector span {
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+	background:url(images/select.png) no-repeat;
+  	text-align: left;
+    height: 36px;
+    line-height: 36px;
+    padding-left:10px;
+    cursor: pointer;
+    width: 180px;
+    display: block; 
+    }
+  div.selector.fixedWidth {
+    width: 190px; 
+    }
+    div.selector.fixedWidth span {
+      width: 190px; 
+      }
+  div.selector select {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    height: 34px; /*JON:041913 was 36 */
+    top: 0px; /*JON:051313 was 2 */
+    left: 0px;
+    width: 190px; 
+    }
+    .pull_left {
+    	float:left;
+    }
+    
+    .whatTime {
+    	font-size: 22px	;
+    	padding: 10px;
+    }
+    
+#address-form input, #step2 #additional-requests input {
+float: left;
+clear: left;
+height: 28px;
+font-size: 16px;
+border: 4px #B41A2B solid;
+margin-top: 4px;
+margin-right: 15px;
+margin-bottom: 10px;
+margin-left: 0px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+.summary-content li {
+	padding: 0 10px;
+	text-align:left;
+	list-style-image: url('images/arrow.png');
+}
+
+.summaryValue {
+	display: inline;
+}
+
+#datepicker {
+padding: 0 0 10px 0;
+}
+
+p.amountCleaners {
+	margin:0;
+	padding: 0px 40px;
+	text-align:right;
+	font-size:14px;
+	color: #B41A2B;
+}
+
+
+
+.circleBorder{
+  background-color: white;
+	border: 5px solid #012564;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	padding: 5px;
+	float: left;
+}
+
+.sqftLabel {
+	font-size:20px;
+	float: left;
+	margin: 0 0 0 30px;
+	padding-top: 7px;
+}
+.error {
+	border: 4px red solid;
+}
+
+.tax{
+	display:inline;
+}
+
+#wrapper_thanks{
+width:550px;
+margin: auto;
+padding-top:15%;
+}
+.center_image{
+padding-left:35%;
+}
+#expDate {
+width: 160px;
+padding: 0;
+}
+#cvc {
+width: 50px;
+}
+#creditCard {
+width: 330px;
+}
+
+.alert {
+padding: 8px 35px 8px 14px;
+margin-bottom: 2px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.alert-danger, .alert-error {
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
+}
+

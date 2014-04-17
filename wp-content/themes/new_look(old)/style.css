@@ -1,0 +1,294 @@
+/* Maid In Texas Custom Wordpress Theme
+-----------------------------------------------------------------------------
+
+Theme Name:      Maid In Texas
+Theme URI:       http://www.webtegrity.com
+Description:     Maid In Texas is a custom theme built for Maid In Texas.
+Author:          Webtegrity
+Author URI:      http://www.webtegrity.com
+
+*/
+/* Webtegriy Style Sheet
+-----------------------------------------------------------------------------
+
+Developer:           Webtegrity
+Email Address: 	     info@webtegrity.com
+Developer Website:   http://www.webtegrity.com/
+
+Client Website:      http://www.webtegriy.com/
+Last Modifier: 	     Wayne Alan McWilliams -Wambition
+Last Modified:       02.11.2013
+
+*/
+/* Table of Contents
+-----------------------------------------------------------------------------
+
+ 1. CORE STYLE
+ 2. TYPOGRAPHY
+ 3. IMAGES
+ 4. LINKS
+ 5. FRAMEWORK
+ 6. FOOTER
+ 7. SOCIAL MEDIA
+
+*/
+
+/***************************************/
+/* 1. CORE STYLE */
+/***************************************/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+blockquote, q {quotes: none;}
+br {height: 0;}
+ul, ol, dl {list-style: none;}
+
+/* Class for clearing floats */
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+
+/* 2. Typography 
+------------------------------------------------------------------------------*/
+
+/* Create the Default Headers  */
+h1, h2, h3, h4, h5, h6 {color: #B41A2B; font-family: "Arvo",serif; font-weight: 400;}
+
+/* Create the Default Paragraphs */
+p {color:#000000; line-height:20px;}
+
+/* Specific Header Settings */
+h1 {font-size: 22px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+/* Other Typo */
+strong{font-weight: bold;}
+hr {border:0 #B41A2B solid; border-top-width: 1px; clear: both; height: 0; margin-bottom: 20px;} 
+ol {list-style: decimal;}
+ul {list-style: square;}
+.align-right {float: right; margin-left: 40px; margin-top: 10px;}
+
+/* 3. Images
+------------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+img {border: 0; border-style: none;}
+.sticky,
+.bypostauthor,
+.gallery-caption {
+    display: normal;
+}
+.alignnone {
+    margin: 1em 1em 1em 0;
+}
+.aligncenter,
+div.aligncenter {
+    display:block;
+    margin: .5em auto;
+}
+.alignright {
+    float:right;
+    margin: 0 0 1em 1em;
+}
+.alignleft {
+    float:left;
+    margin: 0 1em 1em 0;
+}
+.aligncenter {
+    display: block;
+    margin: 1em auto;
+}
+img,
+img[class*="align"],
+img[class*="wp-image-"] {
+    max-width: 100%;
+    height: auto;
+}
+img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+img.alignright {
+    margin-left: 1em 0 1em 1em;
+}
+img.alignleft {
+    margin: 1em 1em 1em 0;
+}
+img.aligncenter{
+    display: block;
+    margin: 1em auto;
+}
+img#wpstats {
+    display: block;
+    margin: 0 auto;
+}
+img[class*="align"],
+img[class*="wp-image-"],
+.gallery .gallery-icon img {
+    border: none;
+}
+.wp-caption {
+    margin-bottom: 1em;
+    margin-left: 0;
+    max-width: 96%;
+    text-align: center;
+}
+.wp-caption img {
+    display: block;
+    margin: 0 auto;
+}
+.wp-caption-text {
+    position: relative;
+    font-size: .8em;
+}
+.gallery {
+    margin: 0 auto;
+}
+.gallery .gallery-item  {
+    margin: 0;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.gallery a img {
+    border: none;
+}
+.gallery-columns-4 .gallery-item {
+    width: 25%;
+}
+.gallery-columns-4 .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+/* 4. Links
+------------------------------------------------------------------------------*/
+
+/* Default Link Types */
+a {color:#B41A2B; text-decoration: none;}
+a:hover {color:#751114; text-decoration: none;}
+a:active {outline: none;}
+a:focus {outline: none;}
+
+/* 5. Framework
+------------------------------------------------------------------------------*/
+
+/*** Red Bar ***/
+.fullbar {
+    background-color: #B41A2B;
+    width: 100%;
+    min-height:30px;
+    color: #ffffff;
+    font-family: arial, serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+/*** Wrapper ***/
+#main_wrapper {
+    width: 100%;
+    min-height: 700px;
+    background: url(images/bgimage.jpg) no-repeat scroll 50% -42px transparent;
+}
+/*** Navigation ***/    
+#navbar {
+    background: url(images/bar-hr-line.png) no-repeat scroll center bottom transparent;
+    height: 50px;
+    padding: 13px 0 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, serif;
+}
+#navbar span.align-right {
+    margin-left: 30px;
+    margin-right: 8px;
+    margin-top: 22px;
+}
+#navbar a{
+    display: inline-block;
+    float:left;
+}
+#navbar ul.menu {
+    padding-top:25px;
+    float: right;
+    list-style: block;
+}
+.menu li{
+    padding:0 5px;
+    list-style:none;
+    float: left;
+}
+/*** Content ***/
+
+#nav_content {
+    margin: auto;
+    width: 960px;
+}
+.main-content-wrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+.custom-widget-area {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.sidebar {
+    width: 330px;
+    height: auto;
+    float: left;
+}
+.page-content {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* 6. Footer
+------------------------------------------------------------------------------*/        
+#footer {
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    color: #333333;
+    font-family: arial, serif;
+    font-size: 12px;
+}
+#footer a:hover {
+    color: #B41A2B;
+}
+ul.footer_navigation {
+    list-style-type: none;
+}
+ul.footer_navigation a {
+    color: #003082;
+    float: left;
+    display: block;
+    border-right: 1px solid #8FA9BA;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 15px;
+    text-decoration: none;
+}
+ul.footer_navigation .footerlast a {
+    border-right: medium none;
+}
+/* 7. Social Media
+------------------------------------------------------------------------------*/        
+#footer span{
+    float: right;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    display: inline;
+}
+
